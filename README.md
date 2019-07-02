@@ -1,14 +1,11 @@
 ## Boris Bikes Project
+Practice writing an app that will emulate a network of docking stations and bikes that anyone can use. The program will model docking stations, bikes and the infrastructure (repair staff, and so on) required to run a Boris bike style business.
 
-Writing an app that will emulate a network of docking stations and bikes that anyone can use. The program will model docking stations, bikes and the infrastructure (repair staff, and so on) required to run a Boris bike style business.
-
-### Motivation
-
-This project is being conducted as part of the Makers Academy course. The aim of the project is to develop skills in the areas of TDD, learn new techniques for debugging and to improve familiarity with the Ruby coding language.
+## Motivation
+The aim of the project is to practice skills in the areas of TDD, learn new techniques for debugging and to improve/practice familiarity with the Ruby coding language.
 
 ## Approach
-
-User Stories.
+Using specifications and acceptance criteria I was able to create User Stories as shown below.
 
 ```
 As a person,
@@ -44,7 +41,7 @@ So that busy areas can be served more effectively,
 I want to be able to specify a larger capacity when necessary.
 ```
 
-Domain Model.
+With the User Stories, I am able to create examples of Domain Models to identify what objects and messages will be needed, an example shown below relevant to the first user story.
 
 Objects  | Messages
 ------------- | -------------
@@ -52,7 +49,7 @@ Person  |
 Bike  | working?
 DockingStation | release_bike
 
-Feature Test.
+Once I had created the User Stories and Domain Models, I can use IRB to run Feature Tests, as shown below. This highlights the TDD approach to building the program.
 ```
 student$ irb
 2.6.3 :001 > docking_station = DockingStation.new
@@ -63,7 +60,7 @@ Traceback (most recent call last):
         1: from (irb):1
 NameError (uninitialized constant DockingStation)
 ```
-Test Drive.
+Test Driving the program ensuring that the same error is seen at feature test level and unit test level.
 ```
 student$ irb
 2.6.3 :001 > require './lib/docking_station.rb'
@@ -79,18 +76,8 @@ Traceback (most recent call last):
 NoMethodError (undefined method `release_bike' for #<DockingStation:0x00007fa5ec21af18>)
 ```
 
-## Progress/Status of Project
-
-
 ## Technologies
-* Ruby
-* Rspec
-
-## Code Quality/Problems
-
-
-## Improvements
-
+Ruby | Rspec
 
 ## Using this Code
 To make use of this project clone it from GitHub by doing the following:
@@ -98,9 +85,7 @@ To make use of this project clone it from GitHub by doing the following:
 1. Clone the repository using `git clone <repo url>` in your terminal.
 2. Then type `bundle install` to install Rspec
 
-
-### Acknowledgements
-
+## Acknowledgements
 Dominic White |
 Makers Academy Challenge
 
