@@ -39,6 +39,21 @@ Traceback (most recent call last):
         1: from (irb):1
 NameError (uninitialized constant DockingStation)
 ```
+Test Drive.
+```
+student$ irb
+2.6.3 :001 > require './lib/docking_station.rb'
+ => true
+2.6.3 :002 > docking_station = DockingStation.new
+ => #<DockingStation:0x00007fa5ec21af18>
+2.6.3 :003 > docking_station.release_bike
+Traceback (most recent call last):
+        4: from /Users/student/.rvm/rubies/ruby-2.6.3/bin/irb:23:in `<main>'
+        3: from /Users/student/.rvm/rubies/ruby-2.6.3/bin/irb:23:in `load'
+        2: from /Users/student/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):3
+NoMethodError (undefined method `release_bike' for #<DockingStation:0x00007fa5ec21af18>)
+```
 
 ## Progress/Status of Project
 
