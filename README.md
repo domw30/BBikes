@@ -8,6 +8,16 @@ This project is being conducted as part of the Makers Academy course. The aim of
 
 ## Approach
 
+```
+As a person,
+So that I can use a bike,
+I'd like a docking station to release a bike.
+
+As a person,
+So that I can use a good bike,
+I'd like to see if a bike is working
+```
+
 ## Progress/Status of Project
 
 
