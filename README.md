@@ -8,6 +8,8 @@ This project is being conducted as part of the Makers Academy course. The aim of
 
 ## Approach
 
+User Stories.
+
 ```
 As a person,
 So that I can use a bike,
@@ -17,6 +19,14 @@ As a person,
 So that I can use a good bike,
 I'd like to see if a bike is working
 ```
+
+Domain Model.
+
+Objects  | Messages
+------------- | -------------
+Person  |
+Bike  | working?
+DockingStation | release_bike
 
 ## Progress/Status of Project
 
