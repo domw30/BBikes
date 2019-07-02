@@ -1,15 +1,12 @@
 require 'docking_station'
 
 describe DockingStation do
+
+  subject(:docking_station) { described_class.new }
+
   it "should respond to #release_bike" do
     docking_station = DockingStation.new
     expect(docking_station).to respond_to :release_bike
-  end
-
-  it "releases working bikes" do
-    docking_station = DockingStation.new
-    bike = docking_station.release_bike
-    expect(bike).to be_working
   end
 
   it "should respond to #dock with 1 argument" do
@@ -36,4 +33,17 @@ describe DockingStation do
     docking_station.dock(bike)
     expect(docking_station.bike).to eq bike
   end
+
+  describe '#release_bike' do
+   it 'releases a bike' do
+     bike = Bike.new
+     docking_station.dock(bike)
+     expect(docking_station.release_bike).to eq bike
+   end
+
+   it 'raises an error when there are no bikes available' do
+     expect { subject.release_bike }.to raise_error 'No bikes available'
+   end
+ end
+ 
 end
